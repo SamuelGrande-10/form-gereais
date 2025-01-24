@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+
+<body>
+    <h1>Teste de Formulários</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iussu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" placeholder="NOME DO USUARIO">
+        </p>
+
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="15">
+        </p>
+
+        <!-- OBS01: required -> Campos Obrigatorios para serem preenchidos -->
+        <!-- OBS02: minlength ou maxlength -> Minimo e maximo de caracteres exigidos -->
+        <!-- OBS03: size -> Regula o tamanho da cixa de informações  -->
+        <!-- OBS04: placeholder -> Dica para o usuario dentro das caixas de preenchimento -->
+
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+       >
+
+
+
+    </form>
+
+    
+</body>
+</html>
